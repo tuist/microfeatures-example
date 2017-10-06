@@ -2,7 +2,25 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:uSearch/uSearch.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ufeatures.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:uHome/uHome.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:uDependencies/uDependencies.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:uUI/uUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:uTesting/uTesting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:uCore/uCore.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
