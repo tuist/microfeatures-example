@@ -1,11 +1,3 @@
-//
-//  ufeaturesUITests.swift
-//  ufeaturesUITests
-//
-//  Created by Pedro Piñera Buendía on 06.10.17.
-//  Copyright © 2017 Caramba. All rights reserved.
-//
-
 import XCTest
 
 class ufeaturesUITests: XCTestCase {
