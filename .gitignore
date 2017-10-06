@@ -221,3 +221,5 @@ playground.xcworkspace
 /*.gcno
 
 # End of https://www.gitignore.io/api/macos,swift,xcode,appcode,carthage,cocoapods,objective-c
+
+Carthage/
