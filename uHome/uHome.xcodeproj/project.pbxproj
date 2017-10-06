@@ -16,6 +16,8 @@
 		049EDD431F87A95400273EE2 /* uUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD421F87A94F00273EE2 /* uUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		049EDD4B1F87AF7100273EE2 /* uDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD4C1F87AF7100273EE2 /* uDependencies.framework */; };
 		049EDD4D1F87AF7700273EE2 /* uDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD4C1F87AF7100273EE2 /* uDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD8F1F87B26600273EE2 /* uTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD901F87B26600273EE2 /* uTesting.framework */; };
+		049EDD911F87B26A00273EE2 /* uTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD901F87B26600273EE2 /* uTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				049EDD911F87B26A00273EE2 /* uTesting.framework in Embed Frameworks */,
 				049EDD4D1F87AF7700273EE2 /* uDependencies.framework in Embed Frameworks */,
 				049EDD431F87A95400273EE2 /* uUI.framework in Embed Frameworks */,
 				049EDD331F87A89300273EE2 /* uCore.framework in Embed Frameworks */,
@@ -54,6 +57,7 @@
 		049EDD311F87A87600273EE2 /* uCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049EDD421F87A94F00273EE2 /* uUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049EDD4C1F87AF7100273EE2 /* uDependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uDependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD901F87B26600273EE2 /* uTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EDD8F1F87B26600273EE2 /* uTesting.framework in Frameworks */,
 				049EDCCC1F87A3B000273EE2 /* uHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +123,7 @@
 		049EDD2F1F87A87600273EE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				049EDD901F87B26600273EE2 /* uTesting.framework */,
 				049EDD4C1F87AF7100273EE2 /* uDependencies.framework */,
 				049EDD421F87A94F00273EE2 /* uUI.framework */,
 				049EDD311F87A87600273EE2 /* uCore.framework */,

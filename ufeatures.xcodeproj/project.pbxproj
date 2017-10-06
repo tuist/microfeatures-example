@@ -27,6 +27,10 @@
 		049EDD5A1F87AFC100273EE2 /* uSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD581F87AFBA00273EE2 /* uSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		049EDD5B1F87AFCB00273EE2 /* uHome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD561F87AFB500273EE2 /* uHome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		049EDD5C1F87AFCF00273EE2 /* uSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD581F87AFBA00273EE2 /* uSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD951F87B2AD00273EE2 /* uTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD961F87B2AD00273EE2 /* uTesting.framework */; };
+		049EDD971F87B2B100273EE2 /* uTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD961F87B2AD00273EE2 /* uTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD981F87B2B700273EE2 /* uTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD991F87B2B700273EE2 /* uTesting.framework */; };
+		049EDD9C1F87B2CF00273EE2 /* uTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD961F87B2AD00273EE2 /* uTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B70559C066D0ACDEAB7165D /* Pods_ufeatures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044B1857DCFF65560157A539 /* Pods_ufeatures.framework */; };
 		996D70161992BBE6D84172FE /* Pods_ufeaturesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5884645C2DB892FD9F2B1A /* Pods_ufeaturesUITests.framework */; };
 		F68D89E8F86A308384BA5346 /* Pods_ufeaturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85354D8258A03F759613BAD /* Pods_ufeaturesTests.framework */; };
@@ -71,11 +75,23 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				049EDD971F87B2B100273EE2 /* uTesting.framework in Embed Frameworks */,
 				049EDD5C1F87AFCF00273EE2 /* uSearch.framework in Embed Frameworks */,
 				049EDD5B1F87AFCB00273EE2 /* uHome.framework in Embed Frameworks */,
 				049EDD541F87AF9D00273EE2 /* uDependencies.framework in Embed Frameworks */,
 				049EDD4A1F87A97300273EE2 /* uUI.framework in Embed Frameworks */,
 				049EDD3E1F87A90E00273EE2 /* uCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049EDD9A1F87B2BA00273EE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				049EDD9C1F87B2CF00273EE2 /* uTesting.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +144,8 @@
 		049EDD521F87AF9100273EE2 /* uDependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uDependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049EDD561F87AFB500273EE2 /* uHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049EDD581F87AFBA00273EE2 /* uSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD961F87B2AD00273EE2 /* uTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD991F87B2B700273EE2 /* uTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF2F4DC829BBAB1564A7D3F /* Pods-ufeaturesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ufeaturesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ufeaturesUITests/Pods-ufeaturesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8299031CD950686DEA94569D /* Pods-ufeaturesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ufeaturesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ufeaturesUITests/Pods-ufeaturesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A85354D8258A03F759613BAD /* Pods_ufeaturesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ufeaturesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EDD951F87B2AD00273EE2 /* uTesting.framework in Frameworks */,
 				F68D89E8F86A308384BA5346 /* Pods_ufeaturesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EDD981F87B2B700273EE2 /* uTesting.framework in Frameworks */,
 				996D70161992BBE6D84172FE /* Pods_ufeaturesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +361,8 @@
 		95500E1A7F5EA51FD6CB1A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				049EDD991F87B2B700273EE2 /* uTesting.framework */,
+				049EDD961F87B2AD00273EE2 /* uTesting.framework */,
 				049EDD581F87AFBA00273EE2 /* uSearch.framework */,
 				049EDD561F87AFB500273EE2 /* uHome.framework */,
 				049EDD521F87AF9100273EE2 /* uDependencies.framework */,
@@ -422,6 +444,7 @@
 				049EDBE81F87916E00273EE2 /* Resources */,
 				C612166F2D71EF3562DB4A09 /* [CP] Embed Pods Frameworks */,
 				5CC9290C0EC94786A3F24BE0 /* [CP] Copy Pods Resources */,
+				049EDD9A1F87B2BA00273EE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
