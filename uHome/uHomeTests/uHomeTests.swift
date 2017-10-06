@@ -1,11 +1,3 @@
-//
-//  uHomeTests.swift
-//  uHomeTests
-//
-//  Created by Pedro Piñera Buendía on 06.10.17.
-//  Copyright © 2017 Caramba. All rights reserved.
-//
-
 import XCTest
 @testable import uHome
 

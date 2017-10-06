@@ -1,12 +1,4 @@
-//
-//  uHome.h
-//  uHome
-//
-//  Created by Pedro Piñera Buendía on 06.10.17.
-//  Copyright © 2017 Caramba. All rights reserved.
-//
-
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for uHome.
 FOUNDATION_EXPORT double uHomeVersionNumber;

@@ -6,6 +6,9 @@ This repository contains a modular Xcode project built using the µfeatures appr
 - 🥑 App dependencies fetched with [CocoaPods](https://cocoapods.org).
 - 🍒 Core dependencies fetched with [Carthage](https://github.com/carthage).
 - 🍇 Configuration in .xcconfig files.
+- 🍐 Reusable mocks and testing data.
+- 🍊 Example apps to try the features.
+- 🍉 UITesting module.
 - 🍍 Tasks automated in a Makefile.
 - 🍎 Continuous integration with [Travis](https://travis-ci.org)
 

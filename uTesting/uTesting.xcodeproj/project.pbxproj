@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		049EDC6F1F87A35100273EE2 /* uTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDC651F87A35100273EE2 /* uTesting.framework */; };
-		049EDC741F87A35100273EE2 /* uTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDC731F87A35100273EE2 /* uTestingTests.swift */; };
-		049EDC761F87A35100273EE2 /* uTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDC681F87A35100273EE2 /* uTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD221F87A66100273EE2 /* uTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDD1F1F87A65B00273EE2 /* uTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD231F87A66E00273EE2 /* uTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDD211F87A65B00273EE2 /* uTestingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		049EDC651F87A35100273EE2 /* uTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDC681F87A35100273EE2 /* uTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uTesting.h; sourceTree = "<group>"; };
-		049EDC691F87A35100273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049EDC6E1F87A35100273EE2 /* uTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDC731F87A35100273EE2 /* uTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTestingTests.swift; sourceTree = "<group>"; };
-		049EDC751F87A35100273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD1C1F87A65B00273EE2 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
+		049EDD1D1F87A65B00273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD1F1F87A65B00273EE2 /* uTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uTesting.h; sourceTree = "<group>"; };
+		049EDD211F87A65B00273EE2 /* uTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uTestingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,10 @@
 		049EDC5B1F87A35100273EE2 = {
 			isa = PBXGroup;
 			children = (
-				049EDC671F87A35100273EE2 /* uTesting */,
-				049EDC721F87A35100273EE2 /* uTestingTests */,
+				049EDD1D1F87A65B00273EE2 /* Info.plist */,
+				049EDD1C1F87A65B00273EE2 /* Tests.plist */,
+				049EDD1E1F87A65B00273EE2 /* Sources */,
+				049EDD201F87A65B00273EE2 /* Tests */,
 				049EDC661F87A35100273EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +70,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		049EDC671F87A35100273EE2 /* uTesting */ = {
+		049EDD1E1F87A65B00273EE2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				049EDC681F87A35100273EE2 /* uTesting.h */,
-				049EDC691F87A35100273EE2 /* Info.plist */,
+				049EDD1F1F87A65B00273EE2 /* uTesting.h */,
 			);
-			path = uTesting;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		049EDC721F87A35100273EE2 /* uTestingTests */ = {
+		049EDD201F87A65B00273EE2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				049EDC731F87A35100273EE2 /* uTestingTests.swift */,
-				049EDC751F87A35100273EE2 /* Info.plist */,
+				049EDD211F87A65B00273EE2 /* uTestingTests.swift */,
 			);
-			path = uTestingTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDC761F87A35100273EE2 /* uTesting.h in Headers */,
+				049EDD221F87A66100273EE2 /* uTesting.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDC741F87A35100273EE2 /* uTestingTests.swift in Sources */,
+				049EDD231F87A66E00273EE2 /* uTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uTesting/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uTesting;
@@ -360,7 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uTesting/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uTesting;
@@ -375,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = uTestingTests/Info.plist;
+				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = uTestingTests/Info.plist;
+				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

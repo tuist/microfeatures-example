@@ -1,15 +1,7 @@
-//
-//  uSearchTests.swift
-//  uSearchTests
-//
-//  Created by Pedro Piñera Buendía on 06.10.17.
-//  Copyright © 2017 Caramba. All rights reserved.
-//
-
 import XCTest
-@testable import uSearch
+@testable import uUI
 
-class uSearchTests: XCTestCase {
+class uUITests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		049EDCF01F87A3CF00273EE2 /* uSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDCE61F87A3CF00273EE2 /* uSearch.framework */; };
-		049EDCF51F87A3CF00273EE2 /* uSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDCF41F87A3CF00273EE2 /* uSearchTests.swift */; };
-		049EDCF71F87A3CF00273EE2 /* uSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDCE91F87A3CF00273EE2 /* uSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD0C1F87A4A400273EE2 /* uSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDD031F87A43500273EE2 /* uSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD0D1F87A4B000273EE2 /* uSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDD051F87A43500273EE2 /* uSearchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		049EDCE61F87A3CF00273EE2 /* uSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDCE91F87A3CF00273EE2 /* uSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uSearch.h; sourceTree = "<group>"; };
-		049EDCEA1F87A3CF00273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049EDCEF1F87A3CF00273EE2 /* uSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDCF41F87A3CF00273EE2 /* uSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uSearchTests.swift; sourceTree = "<group>"; };
-		049EDCF61F87A3CF00273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD001F87A43500273EE2 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
+		049EDD011F87A43500273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD031F87A43500273EE2 /* uSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uSearch.h; sourceTree = "<group>"; };
+		049EDD051F87A43500273EE2 /* uSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uSearchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,10 @@
 		049EDCDC1F87A3CF00273EE2 = {
 			isa = PBXGroup;
 			children = (
-				049EDCE81F87A3CF00273EE2 /* uSearch */,
-				049EDCF31F87A3CF00273EE2 /* uSearchTests */,
+				049EDD011F87A43500273EE2 /* Info.plist */,
+				049EDD001F87A43500273EE2 /* Tests.plist */,
+				049EDD021F87A43500273EE2 /* Sources */,
+				049EDD041F87A43500273EE2 /* Tests */,
 				049EDCE71F87A3CF00273EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +70,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		049EDCE81F87A3CF00273EE2 /* uSearch */ = {
+		049EDD021F87A43500273EE2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				049EDCE91F87A3CF00273EE2 /* uSearch.h */,
-				049EDCEA1F87A3CF00273EE2 /* Info.plist */,
+				049EDD031F87A43500273EE2 /* uSearch.h */,
 			);
-			path = uSearch;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		049EDCF31F87A3CF00273EE2 /* uSearchTests */ = {
+		049EDD041F87A43500273EE2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				049EDCF41F87A3CF00273EE2 /* uSearchTests.swift */,
-				049EDCF61F87A3CF00273EE2 /* Info.plist */,
+				049EDD051F87A43500273EE2 /* uSearchTests.swift */,
 			);
-			path = uSearchTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDCF71F87A3CF00273EE2 /* uSearch.h in Headers */,
+				049EDD0C1F87A4A400273EE2 /* uSearch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDCF51F87A3CF00273EE2 /* uSearchTests.swift in Sources */,
+				049EDD0D1F87A4B000273EE2 /* uSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uSearch/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uSearch;
@@ -360,7 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uSearch/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uSearch;
@@ -375,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = uSearchTests/Info.plist;
+				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = uSearchTests/Info.plist;
+				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

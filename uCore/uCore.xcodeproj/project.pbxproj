@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		049EDC4B1F87A32B00273EE2 /* uCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDC411F87A32B00273EE2 /* uCore.framework */; };
-		049EDC501F87A32B00273EE2 /* uCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDC4F1F87A32B00273EE2 /* uCoreTests.swift */; };
-		049EDC521F87A32B00273EE2 /* uCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDC441F87A32B00273EE2 /* uCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD2A1F87A6C100273EE2 /* uCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDD271F87A6B100273EE2 /* uCoreTests.swift */; };
+		049EDD2B1F87A6C400273EE2 /* uCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDD251F87A6B100273EE2 /* uCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		049EDC411F87A32B00273EE2 /* uCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDC441F87A32B00273EE2 /* uCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uCore.h; sourceTree = "<group>"; };
-		049EDC451F87A32B00273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049EDC4A1F87A32B00273EE2 /* uCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDC4F1F87A32B00273EE2 /* uCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uCoreTests.swift; sourceTree = "<group>"; };
-		049EDC511F87A32B00273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD251F87A6B100273EE2 /* uCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uCore.h; sourceTree = "<group>"; };
+		049EDD271F87A6B100273EE2 /* uCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uCoreTests.swift; sourceTree = "<group>"; };
+		049EDD281F87A6B100273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD291F87A6B100273EE2 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,10 @@
 		049EDC371F87A32B00273EE2 = {
 			isa = PBXGroup;
 			children = (
-				049EDC431F87A32B00273EE2 /* uCore */,
-				049EDC4E1F87A32B00273EE2 /* uCoreTests */,
+				049EDD281F87A6B100273EE2 /* Info.plist */,
+				049EDD291F87A6B100273EE2 /* Tests.plist */,
+				049EDD241F87A6B100273EE2 /* Sources */,
+				049EDD261F87A6B100273EE2 /* Tests */,
 				049EDC421F87A32B00273EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +70,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		049EDC431F87A32B00273EE2 /* uCore */ = {
+		049EDD241F87A6B100273EE2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				049EDC441F87A32B00273EE2 /* uCore.h */,
-				049EDC451F87A32B00273EE2 /* Info.plist */,
+				049EDD251F87A6B100273EE2 /* uCore.h */,
 			);
-			path = uCore;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		049EDC4E1F87A32B00273EE2 /* uCoreTests */ = {
+		049EDD261F87A6B100273EE2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				049EDC4F1F87A32B00273EE2 /* uCoreTests.swift */,
-				049EDC511F87A32B00273EE2 /* Info.plist */,
+				049EDD271F87A6B100273EE2 /* uCoreTests.swift */,
 			);
-			path = uCoreTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDC521F87A32B00273EE2 /* uCore.h in Headers */,
+				049EDD2B1F87A6C400273EE2 /* uCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDC501F87A32B00273EE2 /* uCoreTests.swift in Sources */,
+				049EDD2A1F87A6C100273EE2 /* uCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uCore/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uCore;
@@ -360,7 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uCore/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uCore;
@@ -375,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = uCoreTests/Info.plist;
+				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = uCoreTests/Info.plist;
+				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

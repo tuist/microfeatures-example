@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049EDCB21F87A39300273EE2 /* uDependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDCB01F87A39300273EE2 /* uDependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD131F87A58900273EE2 /* uDependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDD121F87A58400273EE2 /* uDependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		049EDCAD1F87A39300273EE2 /* uDependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uDependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		049EDCB01F87A39300273EE2 /* uDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uDependencies.h; sourceTree = "<group>"; };
-		049EDCB11F87A39300273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD101F87A58400273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049EDD121F87A58400273EE2 /* uDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uDependencies.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +30,8 @@
 		049EDCA31F87A39300273EE2 = {
 			isa = PBXGroup;
 			children = (
-				049EDCAF1F87A39300273EE2 /* uDependencies */,
+				049EDD101F87A58400273EE2 /* Info.plist */,
+				049EDD111F87A58400273EE2 /* Sources */,
 				049EDCAE1F87A39300273EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +44,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		049EDCAF1F87A39300273EE2 /* uDependencies */ = {
+		049EDD111F87A58400273EE2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				049EDCB01F87A39300273EE2 /* uDependencies.h */,
-				049EDCB11F87A39300273EE2 /* Info.plist */,
+				049EDD121F87A58400273EE2 /* uDependencies.h */,
 			);
-			path = uDependencies;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +59,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049EDCB21F87A39300273EE2 /* uDependencies.h in Headers */,
+				049EDD131F87A58900273EE2 /* uDependencies.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uDependencies/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uDependencies;
@@ -279,7 +279,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = uDependencies/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uDependencies;

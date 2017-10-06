@@ -1,12 +1,4 @@
-//
-//  uTesting.h
-//  uTesting
-//
-//  Created by Pedro Piñera Buendía on 06.10.17.
-//  Copyright © 2017 Caramba. All rights reserved.
-//
-
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 //! Project version number for uTesting.
 FOUNDATION_EXPORT double uTestingVersionNumber;
