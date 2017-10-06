@@ -14,6 +14,11 @@ This repository contains a modular Xcode project built using the µfeatures appr
 2. Run `make bootstrap`.
 3. Open `ufeatures.xcworkspace`.
 
+## References
+- [Modular Xcode Projects](http://ppinera.es/2017/09/29/modular-xcode-projects.html)
+- [Framework Oriented Programming](http://frameworkoriented.io/)
+- [Building µfeatures](https://speakerdeck.com/pepibumur/building-ufeatures)
+
 ## About
 
 <img src="https://github.com/carambalabs/Foundation/blob/master/ASSETS/logo-salmon.png?raw=true" width="200" />
