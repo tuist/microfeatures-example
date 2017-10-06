@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		049EDD131F87A58900273EE2 /* uDependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EDD121F87A58400273EE2 /* uDependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049EDD2D1F87A86700273EE2 /* uCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD2E1F87A86700273EE2 /* uCore.framework */; };
+		049EDD3F1F87A94100273EE2 /* uUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD401F87A94100273EE2 /* uUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		049EDCAD1F87A39300273EE2 /* uDependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uDependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		049EDD101F87A58400273EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049EDD121F87A58400273EE2 /* uDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uDependencies.h; sourceTree = "<group>"; };
+		049EDD2E1F87A86700273EE2 /* uCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD401F87A94100273EE2 /* uUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +25,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EDD3F1F87A94100273EE2 /* uUI.framework in Frameworks */,
+				049EDD2D1F87A86700273EE2 /* uCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +39,7 @@
 				049EDD101F87A58400273EE2 /* Info.plist */,
 				049EDD111F87A58400273EE2 /* Sources */,
 				049EDCAE1F87A39300273EE2 /* Products */,
+				049EDD2C1F87A86700273EE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +57,15 @@
 				049EDD121F87A58400273EE2 /* uDependencies.h */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		049EDD2C1F87A86700273EE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049EDD401F87A94100273EE2 /* uUI.framework */,
+				049EDD2E1F87A86700273EE2 /* uCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

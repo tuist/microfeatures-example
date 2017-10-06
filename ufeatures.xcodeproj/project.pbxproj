@@ -12,6 +12,21 @@
 		049EDC0F1F87931400273EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049EDC021F8792BF00273EE2 /* Assets.xcassets */; };
 		049EDC101F87934B00273EE2 /* ufeaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDC081F8792BF00273EE2 /* ufeaturesTests.swift */; };
 		049EDC111F87935A00273EE2 /* ufeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDC0B1F8792BF00273EE2 /* ufeaturesUITests.swift */; };
+		049EDD391F87A8ED00273EE2 /* uCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD3A1F87A8ED00273EE2 /* uCore.framework */; };
+		049EDD3C1F87A8FD00273EE2 /* uCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD3A1F87A8ED00273EE2 /* uCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD3E1F87A90E00273EE2 /* uCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD3A1F87A8ED00273EE2 /* uCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD471F87A96B00273EE2 /* uUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD481F87A96B00273EE2 /* uUI.framework */; };
+		049EDD491F87A96E00273EE2 /* uUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD481F87A96B00273EE2 /* uUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD4A1F87A97300273EE2 /* uUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD481F87A96B00273EE2 /* uUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD511F87AF9100273EE2 /* uDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD521F87AF9100273EE2 /* uDependencies.framework */; };
+		049EDD531F87AF9500273EE2 /* uDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD521F87AF9100273EE2 /* uDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD541F87AF9D00273EE2 /* uDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD521F87AF9100273EE2 /* uDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD551F87AFB500273EE2 /* uHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD561F87AFB500273EE2 /* uHome.framework */; };
+		049EDD571F87AFBA00273EE2 /* uSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD581F87AFBA00273EE2 /* uSearch.framework */; };
+		049EDD591F87AFBD00273EE2 /* uHome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD561F87AFB500273EE2 /* uHome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD5A1F87AFC100273EE2 /* uSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD581F87AFBA00273EE2 /* uSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD5B1F87AFCB00273EE2 /* uHome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD561F87AFB500273EE2 /* uHome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049EDD5C1F87AFCF00273EE2 /* uSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD581F87AFBA00273EE2 /* uSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B70559C066D0ACDEAB7165D /* Pods_ufeatures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044B1857DCFF65560157A539 /* Pods_ufeatures.framework */; };
 		996D70161992BBE6D84172FE /* Pods_ufeaturesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5884645C2DB892FD9F2B1A /* Pods_ufeaturesUITests.framework */; };
 		F68D89E8F86A308384BA5346 /* Pods_ufeaturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85354D8258A03F759613BAD /* Pods_ufeaturesTests.framework */; };
@@ -33,6 +48,39 @@
 			remoteInfo = ufeatures;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		049EDD3B1F87A8F000273EE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				049EDD5A1F87AFC100273EE2 /* uSearch.framework in Embed Frameworks */,
+				049EDD591F87AFBD00273EE2 /* uHome.framework in Embed Frameworks */,
+				049EDD531F87AF9500273EE2 /* uDependencies.framework in Embed Frameworks */,
+				049EDD491F87A96E00273EE2 /* uUI.framework in Embed Frameworks */,
+				049EDD3C1F87A8FD00273EE2 /* uCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049EDD3D1F87A90200273EE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				049EDD5C1F87AFCF00273EE2 /* uSearch.framework in Embed Frameworks */,
+				049EDD5B1F87AFCB00273EE2 /* uHome.framework in Embed Frameworks */,
+				049EDD541F87AF9D00273EE2 /* uDependencies.framework in Embed Frameworks */,
+				049EDD4A1F87A97300273EE2 /* uUI.framework in Embed Frameworks */,
+				049EDD3E1F87A90E00273EE2 /* uCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		044B1857DCFF65560157A539 /* Pods_ufeatures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ufeatures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +123,11 @@
 		049EDC341F879B9000273EE2 /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
 		049EDC351F879B9000273EE2 /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		049EDC361F879B9000273EE2 /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		049EDD3A1F87A8ED00273EE2 /* uCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD481F87A96B00273EE2 /* uUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD521F87AF9100273EE2 /* uDependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uDependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD561F87AFB500273EE2 /* uHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049EDD581F87AFBA00273EE2 /* uSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = uSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF2F4DC829BBAB1564A7D3F /* Pods-ufeaturesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ufeaturesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ufeaturesUITests/Pods-ufeaturesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8299031CD950686DEA94569D /* Pods-ufeaturesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ufeaturesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ufeaturesUITests/Pods-ufeaturesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A85354D8258A03F759613BAD /* Pods_ufeaturesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ufeaturesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +143,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EDD571F87AFBA00273EE2 /* uSearch.framework in Frameworks */,
+				049EDD551F87AFB500273EE2 /* uHome.framework in Frameworks */,
+				049EDD511F87AF9100273EE2 /* uDependencies.framework in Frameworks */,
+				049EDD471F87A96B00273EE2 /* uUI.framework in Frameworks */,
+				049EDD391F87A8ED00273EE2 /* uCore.framework in Frameworks */,
 				5B70559C066D0ACDEAB7165D /* Pods_ufeatures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +341,11 @@
 		95500E1A7F5EA51FD6CB1A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				049EDD581F87AFBA00273EE2 /* uSearch.framework */,
+				049EDD561F87AFB500273EE2 /* uHome.framework */,
+				049EDD521F87AF9100273EE2 /* uDependencies.framework */,
+				049EDD481F87A96B00273EE2 /* uUI.framework */,
+				049EDD3A1F87A8ED00273EE2 /* uCore.framework */,
 				044B1857DCFF65560157A539 /* Pods_ufeatures.framework */,
 				A85354D8258A03F759613BAD /* Pods_ufeaturesTests.framework */,
 				AF5884645C2DB892FD9F2B1A /* Pods_ufeaturesUITests.framework */,
@@ -316,6 +379,7 @@
 				049EDBC91F87916E00273EE2 /* Resources */,
 				2F03892C910CA55A0A7999CF /* [CP] Embed Pods Frameworks */,
 				20DA6DC20AB26188C5BCB096 /* [CP] Copy Pods Resources */,
+				049EDD3B1F87A8F000273EE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,6 +400,7 @@
 				049EDBDD1F87916E00273EE2 /* Resources */,
 				C6694592454CA2508F5B6116 /* [CP] Embed Pods Frameworks */,
 				0D83669CBBE50BAAF083E0DD /* [CP] Copy Pods Resources */,
+				049EDD3D1F87A90200273EE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
