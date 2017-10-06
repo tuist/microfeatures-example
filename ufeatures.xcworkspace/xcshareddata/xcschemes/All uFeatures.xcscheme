@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0900"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC401F87A32B00273EE2"
+               BuildableName = "uCore.framework"
+               BlueprintName = "uCore"
+               ReferencedContainer = "container:uCore/uCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC881F87A36800273EE2"
+               BuildableName = "uUI.framework"
+               BlueprintName = "uUI"
+               ReferencedContainer = "container:uUI/uUI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCAC1F87A39300273EE2"
+               BuildableName = "uDependencies.framework"
+               BlueprintName = "uDependencies"
+               ReferencedContainer = "container:uDependencies/uDependencies.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCC11F87A3B000273EE2"
+               BuildableName = "uHome.framework"
+               BlueprintName = "uHome"
+               ReferencedContainer = "container:uHome/uHome.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCE51F87A3CF00273EE2"
+               BuildableName = "uSearch.framework"
+               BlueprintName = "uSearch"
+               ReferencedContainer = "container:uSearch/uSearch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC641F87A35100273EE2"
+               BuildableName = "uTesting.framework"
+               BlueprintName = "uTesting"
+               ReferencedContainer = "container:uTesting/uTesting.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC491F87A32B00273EE2"
+               BuildableName = "uCoreTests.xctest"
+               BlueprintName = "uCoreTests"
+               ReferencedContainer = "container:uCore/uCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCCA1F87A3B000273EE2"
+               BuildableName = "uHomeTests.xctest"
+               BlueprintName = "uHomeTests"
+               ReferencedContainer = "container:uHome/uHome.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCEE1F87A3CF00273EE2"
+               BuildableName = "uSearchTests.xctest"
+               BlueprintName = "uSearchTests"
+               ReferencedContainer = "container:uSearch/uSearch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC6D1F87A35100273EE2"
+               BuildableName = "uTestingTests.xctest"
+               BlueprintName = "uTestingTests"
+               ReferencedContainer = "container:uTesting/uTesting.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC911F87A36800273EE2"
+               BuildableName = "uUITests.xctest"
+               BlueprintName = "uUITests"
+               ReferencedContainer = "container:uUI/uUI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC491F87A32B00273EE2"
+               BuildableName = "uCoreTests.xctest"
+               BlueprintName = "uCoreTests"
+               ReferencedContainer = "container:uCore/uCore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCCA1F87A3B000273EE2"
+               BuildableName = "uHomeTests.xctest"
+               BlueprintName = "uHomeTests"
+               ReferencedContainer = "container:uHome/uHome.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDCEE1F87A3CF00273EE2"
+               BuildableName = "uSearchTests.xctest"
+               BlueprintName = "uSearchTests"
+               ReferencedContainer = "container:uSearch/uSearch.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC6D1F87A35100273EE2"
+               BuildableName = "uTestingTests.xctest"
+               BlueprintName = "uTestingTests"
+               ReferencedContainer = "container:uTesting/uTesting.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "049EDC911F87A36800273EE2"
+               BuildableName = "uUITests.xctest"
+               BlueprintName = "uUITests"
+               ReferencedContainer = "container:uUI/uUI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "049EDC401F87A32B00273EE2"
+            BuildableName = "uCore.framework"
+            BlueprintName = "uCore"
+            ReferencedContainer = "container:uCore/uCore.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "049EDC401F87A32B00273EE2"
+            BuildableName = "uCore.framework"
+            BlueprintName = "uCore"
+            ReferencedContainer = "container:uCore/uCore.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "049EDC401F87A32B00273EE2"
+            BuildableName = "uCore.framework"
+            BlueprintName = "uCore"
+            ReferencedContainer = "container:uCore/uCore.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
