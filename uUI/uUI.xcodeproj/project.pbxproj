@@ -14,6 +14,7 @@
 		049EDD8E1F87B16D00273EE2 /* uTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDD8D1F87B16900273EE2 /* uTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		049EDDEE1F87B94800273EE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDDEC1F87B94300273EE2 /* AppDelegate.swift */; };
 		049EDDF01F87B99700273EE2 /* uUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EDC891F87A36800273EE2 /* uUI.framework */; };
+		049EDE171F87C3DB00273EE2 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDE161F87C3DB00273EE2 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		049EDDE61F87B94300273EE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049EDDE81F87B94300273EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049EDDEC1F87B94300273EE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		049EDE161F87C3DB00273EE2 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		049EDD161F87A5FD00273EE2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				049EDE151F87C3CB00273EE2 /* Public */,
 				049EDD171F87A5FD00273EE2 /* uUI.h */,
 			);
 			path = Sources;
@@ -155,6 +158,14 @@
 				049EDDEC1F87B94300273EE2 /* AppDelegate.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		049EDE151F87C3CB00273EE2 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				049EDE161F87C3DB00273EE2 /* ColorViewController.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				TargetAttributes = {
 					049EDC881F87A36800273EE2 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					049EDC911F87A36800273EE2 = {
 						CreatedOnToolsVersion = 9.0;
@@ -295,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EDE171F87C3DB00273EE2 /* ColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +463,7 @@
 		049EDC9E1F87A36800273EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -460,6 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +483,7 @@
 		049EDC9F1F87A36800273EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -486,6 +502,7 @@
 		049EDCA11F87A36800273EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uUITests;
@@ -498,6 +515,7 @@
 		049EDCA21F87A36800273EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.caramba.uUITests;

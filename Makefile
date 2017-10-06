@@ -4,7 +4,7 @@ bootstrap:
 	bundle exec pod install
 	carthage update --platform iOS
 
-DESTINATION = "platform=iOS Simulator,name=iPhone 6,OS=11.0"
+DESTINATION = "platform=iOS Simulator,name=iPhone 6,OS=11.1"
 build-core:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme uCore -config Debug clean build | bundle exec xcpretty
 build-ui:
