@@ -33,5 +33,7 @@ test-search:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme uSearch -config Debug clean test -destination $(DESTINATION) | bundle exec xcpretty
 test-home:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme uHome -config Debug clean test -destination $(DESTINATION) | bundle exec xcpretty
+test-features:
+	xcodebuild -workspace uFeatures.xcworkspace -scheme "All ufeatures" -config Debug clean test -destination $(DESTINATION) | bundle exec xcpretty
 test-app:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme ufeatures -config Debug clean test -destination $(DESTINATION) | bundle exec xcpretty
