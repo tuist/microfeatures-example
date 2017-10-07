@@ -15,8 +15,9 @@ This repository contains a modular Xcode project built using the µfeatures appr
 
 ## Setup
 1. Git clone the repository: `git clone git@github.com:carambalabs/ufeatures-example.git`.
-2. Run `make bootstrap`.
-3. Open `ufeatures.xcworkspace`.
+2. Intall [Carthage](https://github.com/carthage) if you didn't have it installed.
+3. Run `make bootstrap`.
+4. Open `ufeatures.xcworkspace`.
 
 ## References
 - [Modular Xcode Projects](http://ppinera.es/2017/09/29/modular-xcode-projects.html)
