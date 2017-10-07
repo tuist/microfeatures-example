@@ -1,5 +1,7 @@
 # µfeatures architecture (example project)
 
+[![Build Status](https://travis-ci.org/carambalabs/ufeatures-example.svg?branch=master)](https://travis-ci.org/carambalabs/ufeatures-example)
+
 This repository contains a modular Xcode project built using the µfeatures approach.
 
 ## Features
