@@ -1,4 +1,4 @@
-Resolves https://github.com/carambalabs/ufeatures-example/issues/YYY
+Resolves https://github.com/pepibumur/ufeatures/issues/YYY
 
 ### Short description
 > Describe here the purpose of your PR.
