@@ -1,6 +1,6 @@
-# µfeatures architecture (example project)
+# µfeatures architecture
 
-[![Build Status](https://travis-ci.org/carambalabs/ufeatures-example.svg?branch=master)](https://travis-ci.org/carambalabs/ufeatures-example)
+[![Build Status](https://travis-ci.org/pepibumur/ufeatures.svg?branch=master)](https://travis-ci.org/pepibumur/ufeatures)
 
 This repository contains a modular Xcode project built using the µfeatures approach.
 
@@ -24,23 +24,11 @@ This repository contains a modular Xcode project built using the µfeatures appr
 - [Framework Oriented Programming](http://frameworkoriented.io/)
 - [Building µfeatures](https://speakerdeck.com/pepibumur/building-ufeatures)
 
-## About
-
-<img src="https://github.com/carambalabs/Foundation/blob/master/ASSETS/logo-salmon.png?raw=true" width="200" />
-
-This project is funded and maintained by [Caramba](http://caramba.io). We 💛 open source software!
-
-Check out our other [open source projects](https://github.com/carambalabs/), read our [blog](http://blog.caramba.io) or say :wave: on twitter [@carambalabsEng](http://twitter.com/carambalabsEng).
-
-## Contribute
-
-Contributions are welcome :metal: We encourage developers like you to help us improve the projects we've shared with the community. Please see the [Contributing Guide](https://github.com/carambalabs/Foundation/blob/master/CONTRIBUTING.md) and the [Code of Conduct](https://github.com/carambalabs/Foundation/blob/master/CONDUCT.md).
-
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Caramba
+Copyright (c) 2017 Pedro Piñera
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
