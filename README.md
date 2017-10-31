@@ -1,6 +1,6 @@
 # µfeatures architecture
 
-[![Build Status](https://travis-ci.org/pepibumur/ufeatures.svg?branch=master)](https://travis-ci.org/pepibumur/ufeatures)
+[![Build Status](https://travis-ci.org/microfeatures/example.svg?branch=master)](https://travis-ci.org/microfeatures/example)
 
 This repository contains a modular Xcode project built using the µfeatures approach.
 
