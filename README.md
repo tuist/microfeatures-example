@@ -14,7 +14,7 @@ This repository contains a modular Xcode project built using the µfeatures appr
 - 🍎 Continuous integration with [Travis](https://travis-ci.org)
 
 ## Setup
-1. Git clone the repository: `git clone git@github.com:carambalabs/ufeatures-example.git`.
+1. Git clone the repository: `git clone git@github.com:microfeatures/ufeatures-example.git`.
 2. Intall [Carthage](https://github.com/carthage) if you didn't have it installed.
 3. Run `make bootstrap`.
 4. Open `ufeatures.xcworkspace`.
