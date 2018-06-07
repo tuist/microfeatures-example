@@ -223,3 +223,6 @@ playground.xcworkspace
 # End of https://www.gitignore.io/api/macos,swift,xcode,appcode,carthage,cocoapods,objective-c
 
 Carthage/
+
+uCore/uCore.xcodeproj
+uCore/uCore.xcworkspace
