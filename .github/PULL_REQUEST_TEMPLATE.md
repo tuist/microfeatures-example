@@ -1,4 +1,4 @@
-Resolves https://github.com/pepibumur/ufeatures/issues/YYY
+Resolves https://github.com/xcode-project-manager/microfeatures-example/issues/YYY
 
 ### Short description
 > Describe here the purpose of your PR.
@@ -11,6 +11,3 @@ Resolves https://github.com/pepibumur/ufeatures/issues/YYY
 
 - [ ] Step 1
 - [ ] Setp 2
-
-### GIF
-> Find a descriptive GIF for your PR. Because we :heart: fun at Caramba.
