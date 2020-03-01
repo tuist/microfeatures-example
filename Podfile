@@ -1,5 +1,4 @@
 target 'ufeatures' do
-
   use_frameworks!
 
   target 'ufeaturesTests' do
@@ -9,5 +8,4 @@ target 'ufeatures' do
   target 'ufeaturesUITests' do
     inherit! :search_paths
   end
-
 end
