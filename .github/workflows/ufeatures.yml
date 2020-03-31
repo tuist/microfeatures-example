@@ -4,7 +4,7 @@ on: ["push"]
 
 jobs:
   build:
-    name: Build
+    name: uCore
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,4 +15,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate
+          tuist generate --path Projects/uCore
+      - name: Build uCore
+        run: |
+          make build-core
