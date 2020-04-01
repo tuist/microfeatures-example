@@ -21,3 +21,7 @@ build-search:
 	xcodebuild -workspace Projects/uSearch/uSearch.xcworkspace -scheme uSearch -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 test-search:
 	xcodebuild -workspace Projects/uSearch/uSearch.xcworkspace -scheme uSearch -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test
+build-app:
+	xcodebuild -workspace Projects/App/App.xcworkspace -scheme App -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
+test-app:
+	xcodebuild -workspace Projects/App/App.xcworkspace -scheme App -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test

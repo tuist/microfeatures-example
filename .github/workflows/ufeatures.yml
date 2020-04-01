@@ -179,4 +179,36 @@ jobs:
       - name: Test uSearch
         run: |
           make test-search
+  build-app:
+    name: Build uSearch
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/App
+      - name: Build App
+        run: |
+          make build-app
+  test-App:
+    name: Test App
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/App
+      - name: Test App
+        run: |
+          make test-app
       
