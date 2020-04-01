@@ -1,5 +1,6 @@
 import XCTest
 @testable import uHome
+@testable import uFeaturesTesting
 @testable import uTesting
 
 class uHomeTests: XCTestCase {

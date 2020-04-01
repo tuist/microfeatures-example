@@ -17,3 +17,7 @@ build-home:
 	xcodebuild -workspace Projects/uHome/uHome.xcworkspace -scheme uHome -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 test-home:
 	xcodebuild -workspace Projects/uHome/uHome.xcworkspace -scheme uHome -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test
+build-search:
+	xcodebuild -workspace Projects/uSearch/uSearch.xcworkspace -scheme uSearch -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
+test-search:
+	xcodebuild -workspace Projects/uSearch/uSearch.xcworkspace -scheme uSearch -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test

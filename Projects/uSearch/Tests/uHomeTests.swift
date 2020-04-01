@@ -1,5 +1,7 @@
 import XCTest
 @testable import uSearch
+@testable import uFeaturesTesting
+@testable import uTesting
 
 class uSearchTests: XCTestCase {
     

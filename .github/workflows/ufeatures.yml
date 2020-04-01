@@ -147,4 +147,36 @@ jobs:
       - name: Test uHome
         run: |
           make test-home
+  build-uSearch:
+    name: Build uSearch
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/uSearch
+      - name: Build uSearch
+        run: |
+          make build-search
+  test-uSearch:
+    name: Test uSearch
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/uSearch
+      - name: Test uSearch
+        run: |
+          make test-search
       
