@@ -3,8 +3,8 @@ name: uFeatures
 on: ["push"]
 
 jobs:
-  uCore:
-    name: uCore
+  build-uCore:
+    name: Build uCore
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1
@@ -19,6 +19,22 @@ jobs:
       - name: Build uCore
         run: |
           make build-core
+  test-uCore:
+    name: Test uCore
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/uCore
+      - name: Test uCore
+        run: |
+          make test-core
   uTesting:
     name: uTesting
     runs-on: macOS-latest

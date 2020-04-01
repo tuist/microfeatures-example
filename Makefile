@@ -1,6 +1,8 @@
 DESTINATION = "platform=iOS Simulator,name=iPhone 11,OS=13.4"
 build-core:
 	xcodebuild -workspace Projects/uCore/uCore.xcworkspace -scheme uCore -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
+test-core:
+	xcodebuild -workspace Projects/uCore/uCore.xcworkspace -scheme uCore -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test
 build-testing:
 	xcodebuild -workspace Projects/uTesting/uTesting.xcworkspace -scheme uTesting -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 build-features:
@@ -15,8 +17,6 @@ build-app:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme ufeatures -config Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 build-examples:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme "All Examples" -config Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-test-core:
-	xcodebuild -workspace uFeatures.xcworkspace -scheme uCore -config Debug clean test -destination $(DESTINATION)
 test-ui:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme uUI -config Debug clean test -destination $(DESTINATION)
 test-testing:
