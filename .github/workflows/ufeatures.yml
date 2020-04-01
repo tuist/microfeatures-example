@@ -35,8 +35,8 @@ jobs:
       - name: Test uCore
         run: |
           make test-core
-  uTesting:
-    name: uTesting
+  build-uTesting:
+    name: Build uTesting
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1
@@ -51,8 +51,8 @@ jobs:
       - name: Build uTesting
         run: |
           make build-testing
-  uFeatures:
-    name: uFeatures
+  build-uFeatures:
+    name: Build uFeatures
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1
@@ -67,8 +67,24 @@ jobs:
       - name: Build uFeatures
         run: |
           make build-features
-  uUI:
-    name: uUI
+  test-uFeatures:
+    name: Test uFeatures
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/uFeatures
+      - name: Test uFeatures
+        run: |
+          make test-features
+  build-uUI:
+    name: Build uUI
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1
@@ -83,4 +99,20 @@ jobs:
       - name: Build uUI
         run: |
           make build-ui
+  test-uUI:
+    name: Test uUI
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/uUI
+      - name: Test uUI
+        run: |
+          make test-ui
       
