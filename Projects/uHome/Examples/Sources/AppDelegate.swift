@@ -1,4 +1,5 @@
 import UIKit
+import uHome
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

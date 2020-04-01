@@ -13,3 +13,7 @@ build-ui:
 	xcodebuild -workspace Projects/uUI/uUI.xcworkspace -scheme uUI -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 test-ui:
 	xcodebuild -workspace Projects/uUI/uUI.xcworkspace -scheme uUI -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test
+build-home:
+	xcodebuild -workspace Projects/uHome/uHome.xcworkspace -scheme uHome -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
+test-home:
+	xcodebuild -workspace Projects/uHome/uHome.xcworkspace -scheme uHome -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean test

@@ -74,13 +74,14 @@ extension Project {
                 dependencies: testsDependencies,
                 settings: Settings(configurations: testsConfigurations)))
         }
-        if targets.contains(.testing) {
+        if targets.contains(.examples) {
             projectTargets.append(Target(name: "\(name)Example",
                 platform: .iOS,
                 product: .app,
                 bundleId: "io.tuist.\(name)Examples",
                 infoPlist: .default,
-                sources: "Examples/**/*.swift",
+                sources: "Examples/Sources/**/*.swift",
+                resources: "Examples/Resources/**",
                 dependencies: [.target(name: "\(name)")],
                 settings: Settings(configurations: appConfigurations)))
         }
