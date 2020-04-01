@@ -10,11 +10,12 @@ public enum uFeatureTarget {
 
 extension Project {
     
-    
     public static func framework(name: String,
                                  targets: Set<uFeatureTarget> = Set([.framework, .tests, .examples, .testing]),
                                  dependencies: [String] = [],
                                  sdks: [String] = []) -> Project {
+        
+        // Configurations
         let frameworkConfigurations: [CustomConfiguration] = [
             .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")),
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig"))
@@ -32,17 +33,18 @@ extension Project {
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/Base/Configurations/Release.xcconfig"))
         ]
         
+        // Test dependencies
         var testsDependencies: [TargetDependency] = [
             .target(name: "\(name)"),
             .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting"))
         ]
-        dependencies.forEach { (name) in
-            testsDependencies.append(.project(target: "\(name)Testing", path: .relativeToRoot("Projects/\(name)")))
-        }
+        dependencies.forEach { testsDependencies.append(.project(target: "\($0)Testing", path: .relativeToRoot("Projects/\($0)"))) }
         
+        // Target dependencies
         var targetDependencies: [TargetDependency] = dependencies.map({ .project(target: $0, path: .relativeToRoot("Projects/\($0)")) })
         targetDependencies.append(contentsOf: sdks.map({.sdk(name: $0)}))
         
+        // Project targets
         var projectTargets: [Target] = []
         if targets.contains(.framework) {
             projectTargets.append(Target(name: name,
@@ -86,6 +88,7 @@ extension Project {
                 settings: Settings(configurations: appConfigurations)))
         }
         
+        // Project
         return Project(name: name,
                        organizationName: "Tuist",
                        settings: Settings(configurations: projectConfigurations),
