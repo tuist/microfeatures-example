@@ -51,4 +51,20 @@ jobs:
       - name: Build uFeatures
         run: |
           make build-features
+  uUI:
+    name: uUI
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist generate --path Projects/uUI
+      - name: Build uUI
+        run: |
+          make build-ui
       

@@ -6,9 +6,7 @@ build-testing:
 build-features:
 	xcodebuild -workspace Projects/uFeatures/uFeatures.xcworkspace -scheme uFeatures -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 build-ui:
-	xcodebuild -workspace uFeatures.xcworkspace -scheme uUI -config Debug clean build
-build-dependencies:
-	xcodebuild -workspace uFeatures.xcworkspace -scheme uDependencies -config Debug clean build
+	xcodebuild -workspace Projects/uUI/uUI.xcworkspace -scheme uUI -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 build-search:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme uSearch -config Debug clean build
 build-home:

@@ -1,7 +1,8 @@
 import XCTest
+@testable import uTesting
 @testable import uUI
 
-class uUITests: XCTestCase {
+class uCoreTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
