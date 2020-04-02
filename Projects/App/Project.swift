@@ -30,7 +30,7 @@ let project = Project(name: "App",
                                dependencies: [
                                 .project(target: "uSearch", path: .relativeToRoot("Projects/uSearch")),
                                 .project(target: "uHome", path: .relativeToRoot("Projects/uHome")),
-                                .project(target: "uFeatures", path: .relativeToRoot("Projects/ufeatures")),
+                                .project(target: "uFeatures", path: .relativeToRoot("Projects/uFeatures")),
                                 .project(target: "uCore", path: .relativeToRoot("Projects/uCore")),
                                 .project(target: "uUI", path: .relativeToRoot("Projects/uUI")),
                                 ],
