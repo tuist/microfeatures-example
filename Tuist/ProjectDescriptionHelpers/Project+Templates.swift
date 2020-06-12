@@ -36,9 +36,9 @@ extension Project {
         // Test dependencies
         var testsDependencies: [TargetDependency] = [
             .target(name: "\(name)"),
-            .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting"))
+//            .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting"))
         ]
-        dependencies.forEach { testsDependencies.append(.project(target: "\($0)Testing", path: .relativeToRoot("Projects/\($0)"))) }
+        // dependencies.forEach { testsDependencies.append(.project(target: "\($0)Testing", path: .relativeToRoot("Projects/\($0)"))) }
         
         // Target dependencies
         var targetDependencies: [TargetDependency] = dependencies.map({ .project(target: $0, path: .relativeToRoot("Projects/\($0)")) })
@@ -57,14 +57,14 @@ extension Project {
                 settings: Settings(configurations: frameworkConfigurations)))
         }
         if targets.contains(.testing) {
-            projectTargets.append(Target(name: "\(name)Testing",
-                platform: .iOS,
-                product: .framework,
-                bundleId: "io.tuist.\(name)Testing",
-                infoPlist: .default,
-                sources: "Testing/**/*.swift",
-                dependencies: [.target(name: "\(name)")],
-                settings: Settings(configurations: frameworkConfigurations)))
+//            projectTargets.append(Target(name: "\(name)Testing",
+//                platform: .iOS,
+//                product: .framework,
+//                bundleId: "io.tuist.\(name)Testing",
+//                infoPlist: .default,
+//                sources: "Testing/**/*.swift",
+//                dependencies: [.target(name: "\(name)")],
+//                settings: Settings(configurations: frameworkConfigurations)))
         }
         if targets.contains(.tests) {
             projectTargets.append(Target(name: "\(name)Tests",
