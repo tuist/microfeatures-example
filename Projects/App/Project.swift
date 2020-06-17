@@ -43,7 +43,8 @@ let project = Project(name: "App",
                                sources: ["Tests/**/*.swift"],
                                dependencies: [
                                 .target(name: "App"),
-                                // .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting"))
+                                .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting")),
+                                .xctest
                                 ],
                                settings: Settings(configurations: testsConfigurations)),
                         Target(name: "AppUITests",
@@ -54,7 +55,8 @@ let project = Project(name: "App",
                                sources: ["UITests/**/*.swift"],
                                dependencies: [
                                 .target(name: "App"),
-                                // .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting"))
+                                .project(target: "uTesting", path: .relativeToRoot("Projects/uTesting")),
+                                .xctest
                                 ],
                                settings: Settings(configurations: testsConfigurations))
 ])
