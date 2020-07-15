@@ -1,0 +1,20 @@
+name: Cache
+
+on: [push]
+
+jobs:
+  cache:
+    name: Warm cache
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Select Xcode 11.4
+        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Install Tuist
+        run: |
+          bash <(curl -Ls https://install.tuist.io)
+      - name: Generate project
+        run: |
+          tuist cloud warm-cache
+        env:
+          TUIST_CLOUD_TOKEN: ${{ secrets.TUIST_CLOUD_TOKEN }}
