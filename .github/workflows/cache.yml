@@ -1,7 +1,11 @@
 name: Cache
 
-on: [push]
-
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '* */24 * * *'
 jobs:
   cache:
     name: Warm cache
