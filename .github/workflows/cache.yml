@@ -19,6 +19,6 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist cloud warm-cache
+          tuist cache warm
         env:
           TUIST_CLOUD_TOKEN: ${{ secrets.TUIST_CLOUD_TOKEN }}
