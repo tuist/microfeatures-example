@@ -15,7 +15,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uCore
+          tuist generate
       - name: Build uCore
         run: |
           make build-core
@@ -31,7 +31,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uCore
+          tuist generate
       - name: Test uCore
         run: |
           make test-core
@@ -47,7 +47,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uTesting
+          tuist generate
       - name: Build uTesting
         run: |
           make build-testing
@@ -63,7 +63,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uFeatures
+          tuist generate
       - name: Build uFeatures
         run: |
           make build-features
@@ -79,7 +79,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uFeatures
+          tuist generate
       - name: Test uFeatures
         run: |
           make test-features
@@ -95,7 +95,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uUI
+          tuist generate
       - name: Build uUI
         run: |
           make build-ui
@@ -111,7 +111,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uUI
+          tuist generate
       - name: Test uUI
         run: |
           make test-ui
@@ -127,7 +127,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uHome
+          tuist generate
       - name: Build uHome
         run: |
           make build-home
@@ -143,7 +143,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uHome
+          tuist generate
       - name: Test uHome
         run: |
           make test-home
@@ -159,7 +159,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uSearch
+          tuist generate
       - name: Build uSearch
         run: |
           make build-search
@@ -175,7 +175,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/uSearch
+          tuist generate
       - name: Test uSearch
         run: |
           make test-search
@@ -191,7 +191,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/App
+          tuist generate
       - name: Build App
         run: |
           make build-app
@@ -207,7 +207,7 @@ jobs:
           bash <(curl -Ls https://install.tuist.io)
       - name: Generate project
         run: |
-          tuist generate --path Projects/App
+          tuist generate
       - name: Test App
         run: |
           make test-app

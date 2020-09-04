@@ -18,7 +18,7 @@ func targets() -> [Target] {
     return targets
 }
 
-let project = Project(name: "MicroFeatures",
+let project = Project(name: "uFeatures",
                       organizationName: "io.tuist",
                       packages: [],
                       settings: Settings(configurations: configurations),
