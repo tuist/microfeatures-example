@@ -17,7 +17,7 @@ jobs:
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
-      - name: Generate project
+      - name: Warm the cache
         run: |
           tuist cache warm
         env:
