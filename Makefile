@@ -1,4 +1,4 @@
-DESTINATION = "platform=iOS Simulator,name=iPhone 11,OS=13.4"
+DESTINATION = "platform=iOS Simulator,name=iPhone 11,OS=13.5"
 build-core:
 	xcodebuild -workspace uFeatures.xcworkspace -scheme uCore -config Debug -destination $(DESTINATION) -sdk iphonesimulator clean build
 test-core:
