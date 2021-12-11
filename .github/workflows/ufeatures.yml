@@ -5,11 +5,11 @@ on: ["push"]
 jobs:
   build-uCore:
     name: Build uCore
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -21,11 +21,11 @@ jobs:
           make build-core
   test-uCore:
     name: Test uCore
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -37,10 +37,10 @@ jobs:
           make test-core
   build-uTesting:
     name: Build uTesting
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
+      - name: Select Xcode 13.1
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app
       - name: Install Tuist
         run: |
@@ -53,11 +53,11 @@ jobs:
           make build-testing
   build-uFeatures:
     name: Build uFeatures
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -69,11 +69,11 @@ jobs:
           make build-features
   test-uFeatures:
     name: Test uFeatures
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -85,11 +85,11 @@ jobs:
           make test-features
   build-uUI:
     name: Build uUI
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -101,11 +101,11 @@ jobs:
           make build-ui
   test-uUI:
     name: Test uUI
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -117,11 +117,11 @@ jobs:
           make test-ui
   build-uHome:
     name: Build uHome
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -133,11 +133,11 @@ jobs:
           make build-home
   test-uHome:
     name: Test uHome
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -149,11 +149,11 @@ jobs:
           make test-home
   build-uSearch:
     name: Build uSearch
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -165,11 +165,11 @@ jobs:
           make build-search
   test-uSearch:
     name: Test uSearch
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -181,11 +181,11 @@ jobs:
           make test-search
   build-app:
     name: Build uSearch
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
@@ -197,11 +197,11 @@ jobs:
           make build-app
   test-App:
     name: Test App
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - uses: actions/checkout@v1
-      - name: Select Xcode 11.4
-        run: sudo xcode-select -switch /Applications/Xcode_11.4.app
+      - name: Select Xcode 13.1
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app
       - name: Install Tuist
         run: |
           bash <(curl -Ls https://install.tuist.io)
