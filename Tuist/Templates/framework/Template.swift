@@ -33,8 +33,7 @@ let template = Template(
     attributes: [
         nameAttribute,
         .optional("platform", default: "iOS"),
-    ],
-    files: [
+    ], items: [
         .string(path: "\(nameAttribute)/Sources/\(nameAttribute).swift", contents: exampleContents),
         .string(path: "\(nameAttribute)/Tests/\(nameAttribute)Tests.swift", contents: testContents),
         .file(path: "\(nameAttribute)/Project.swift", templatePath: "project.stencil"),

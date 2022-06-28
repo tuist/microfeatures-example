@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let configurations: [CustomConfiguration] = [
+let configurations: [Configuration] = [
     .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/Base/Configurations/Debug.xcconfig")),
     .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/Base/Configurations/Release.xcconfig")),
 ]
@@ -21,5 +21,5 @@ func targets() -> [Target] {
 let project = Project(name: "uFeatures",
                       organizationName: "io.tuist",
                       packages: [],
-                      settings: Settings(configurations: configurations),
+                      settings: Settings.settings(configurations: configurations),
                       targets: targets())
