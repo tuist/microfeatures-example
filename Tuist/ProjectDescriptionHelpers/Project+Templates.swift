@@ -11,11 +11,11 @@ extension Target {
     public static func makeAppTargets(name: String,
                                       dependencies: [String] = [],
                                       testDependencies: [String] = []) -> [Target] {
-        let appConfigurations: [ProjectDescription.Configuration] = [
+        let appConfigurations: [Configuration] = [
             .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")),
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Application.xcconfig")),
         ]
-        let testsConfigurations: [ProjectDescription.Configuration] = [
+        let testsConfigurations: [Configuration] = [
             .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")),
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")),
         ]
@@ -29,7 +29,7 @@ extension Target {
                 sources: ["Projects/\(name)/Sources/**/*.swift"],
                 resources: ["Projects/\(name)/Resources/**/*"],
                 dependencies: targetDependencies,
-                settings: Settings.settings(configurations: appConfigurations)),
+                   settings: Settings.settings(configurations: appConfigurations)),
             Target(name: "\(name)Tests",
                 platform: .iOS,
                 product: .unitTests,
@@ -40,7 +40,7 @@ extension Target {
                     .target(name: name),
                     .xctest,
                     ] + testDependencies.map({ .target(name: $0) }),
-                settings: Settings.settings(configurations: testsConfigurations)),
+                   settings: Settings.settings(configurations: testsConfigurations)),
             Target(name: "\(name)UITests",
                 platform: .iOS,
                 product: .unitTests,
@@ -51,7 +51,7 @@ extension Target {
                     .target(name: name),
                     .xctest,
                     ] + testDependencies.map({ .target(name: $0) }),
-                settings: Settings.settings(configurations: testsConfigurations)),
+                   settings: Settings.settings(configurations: testsConfigurations)),
         ]
     }
     
@@ -62,15 +62,15 @@ extension Target {
                                             sdks: [String] = [],
                                             dependsOnXCTest: Bool = false) -> [Target] {
         // Configurations
-        let frameworkConfigurations: [ProjectDescription.Configuration] = [
+        let frameworkConfigurations: [Configuration] = [
             .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")),
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Framework.xcconfig")),
         ]
-        let testsConfigurations: [ProjectDescription.Configuration] = [
+        let testsConfigurations: [Configuration] = [
             .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")),
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")),
         ]
-        let appConfigurations: [ProjectDescription.Configuration] = [
+        let appConfigurations: [Configuration] = [
             .debug(name: "Debug", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")),
             .debug(name: "Release", settings: [String: SettingValue](), xcconfig: .relativeToRoot("Configurations/iOS/iOS-Base.xcconfig")),
         ]
@@ -84,7 +84,7 @@ extension Target {
         
         // Target dependencies
         var targetDependencies: [TargetDependency] = dependencies.map { .target(name: $0) }
-        targetDependencies.append(contentsOf: sdks.map { .sdk(name: $0) })
+        targetDependencies.append(contentsOf: sdks.map { .sdk(name: $0, type: .framework) })
         if dependsOnXCTest {
             targetDependencies.append(.xctest)
         }
@@ -99,7 +99,7 @@ extension Target {
                 infoPlist: .default,
                 sources: ["Projects/\(name)/Sources/**/*.swift"],
                 dependencies: targetDependencies,
-                settings: Settings.settings(configurations: frameworkConfigurations)))
+                    settings: Settings.settings(configurations: frameworkConfigurations)))
         }
         if targets.contains(.testing) {
             projectTargets.append(Target(name: "\(name)Testing",
@@ -109,7 +109,7 @@ extension Target {
                 infoPlist: .default,
                 sources: ["Projects/\(name)/Testing/**/*.swift"],
                 dependencies: [.target(name: "\(name)"), .xctest],
-                settings: Settings.settings(configurations: frameworkConfigurations)))
+                    settings: Settings.settings(configurations: frameworkConfigurations)))
         }
         if targets.contains(.tests) {
             projectTargets.append(Target(name: "\(name)Tests",
@@ -119,7 +119,7 @@ extension Target {
                 infoPlist: .default,
                 sources: ["Projects/\(name)/Tests/**/*.swift"],
                 dependencies: targetTestDependencies,
-                settings: Settings.settings(configurations: testsConfigurations)))
+                                         settings: Settings.settings(configurations: testsConfigurations)))
         }
         if targets.contains(.examples) {
             projectTargets.append(Target(name: "\(name)Example",
@@ -130,7 +130,7 @@ extension Target {
                 sources: ["Projects/\(name)/Examples/Sources/**/*.swift"],
                 resources: ["Projects/\(name)/Examples/Resources/**"],
                 dependencies: [.target(name: "\(name)")],
-                settings: Settings.settings(configurations: appConfigurations)))
+                    settings: Settings.settings(configurations: appConfigurations)))
         }
         return projectTargets
     }
