@@ -11,10 +11,10 @@ func targets() -> [Target] {
     targets += Target.makeAppTargets(name: "App", dependencies: ["uSearch", "uHome"], testDependencies: ["uTesting"])
     targets += Target.makeFrameworkTargets(name: "uTesting", targets: Set([.framework]), dependsOnXCTest: true)
     targets += Target.makeFrameworkTargets(name: "uCore")
-    targets += Target.makeFrameworkTargets(name: "uUI")
-    targets += Target.makeFrameworkTargets(name: "uFeatures", dependencies: ["uCore", "uUI"], targets: Set([.framework, .tests, .testing]))
-    targets += Target.makeFrameworkTargets(name: "uHome", dependencies: ["uFeatures", "uCore", "uUI"])
-    targets += Target.makeFrameworkTargets(name: "uSearch", dependencies:  ["uFeatures", "uCore", "uUI"])
+    targets += Target.makeFrameworkTargets(name: "uUI", testDependencies: ["uTesting"])
+    targets += Target.makeFrameworkTargets(name: "uFeatures", dependencies: ["uCore", "uUI"], testDependencies: ["uTesting"], targets: Set([.framework, .tests, .testing]))
+    targets += Target.makeFrameworkTargets(name: "uHome", dependencies: ["uFeatures", "uCore", "uUI"], testDependencies: ["uTesting"])
+    targets += Target.makeFrameworkTargets(name: "uSearch", dependencies:  ["uFeatures", "uCore", "uUI"], testDependencies: ["uTesting"])
     return targets
 }
 
