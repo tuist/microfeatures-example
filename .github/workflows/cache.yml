@@ -11,7 +11,7 @@ jobs:
     name: Warm cache
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist

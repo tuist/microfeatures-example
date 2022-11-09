@@ -7,7 +7,7 @@ jobs:
     name: Build uCore
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -23,7 +23,7 @@ jobs:
     name: Test uCore
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -39,7 +39,7 @@ jobs:
     name: Build uTesting
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -55,7 +55,7 @@ jobs:
     name: Build uFeatures
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -71,7 +71,7 @@ jobs:
     name: Test uFeatures
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -87,7 +87,7 @@ jobs:
     name: Build uUI
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -103,7 +103,7 @@ jobs:
     name: Test uUI
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -119,7 +119,7 @@ jobs:
     name: Build uHome
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -135,7 +135,7 @@ jobs:
     name: Test uHome
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -151,7 +151,7 @@ jobs:
     name: Build uSearch
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -167,7 +167,7 @@ jobs:
     name: Test uSearch
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -183,7 +183,7 @@ jobs:
     name: Build uSearch
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
@@ -199,7 +199,7 @@ jobs:
     name: Test App
     runs-on: macOS-12
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Select Xcode 13.4.1
         run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app
       - name: Install Tuist
